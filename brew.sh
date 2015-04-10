@@ -14,6 +14,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Install Homebrew-versions
+brew tap homebrew/versions
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -41,11 +44,15 @@ brew install ringojs
 brew install narwhal
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
+
+# Install Vim
+brew install vim --override-system-vi
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -96,6 +103,28 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# Install dev tools
+brew install flow
+brew install graphicsmagick
+brew install heroku-toolbelt
+brew install mongodb
+brew install node
+brew install react-native-cli
+brew install reattach-to-user-namespace
+brew install redis
+brew install the_silver_searcher
+brew install tmux
+brew install --HEAD watchman
+
+# Have launchd start mongodb and redis at login
+mkdir ~/Library/LaunchAgents
+ln -s /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+ln -s /usr/local/opt/redis/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
+# Install Tmuxinator
+gem install tmuxinator
+mkdir ~/.tmuxinator
 
 # Remove outdated versions from the cellar.
 brew cleanup

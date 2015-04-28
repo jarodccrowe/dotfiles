@@ -122,8 +122,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 let mapleader="\<Space>"
 
 let g:syntastic_html_checkers=[]
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+let g:syntastic_javascript_checkers = ['eslint']
 
 let g:ctrlp_working_path_mode = 'e'
 let g:multi_cursor_exit_from_insert_mode=0

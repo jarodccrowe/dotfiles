@@ -5,5 +5,6 @@ npm install -g react-native-cli
 npm install -g generator-keystone
 npm install -g coffee-script
 npm install -g gulp
-npm install -g jshint
-npm install -g jsxhint
+npm install -g eslint
+npm install -g babel-eslint
+npm install -g eslint-plugin-react

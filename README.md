@@ -105,6 +105,8 @@ To ensure Powerline displays properly within iTerm you would need to install the
 
 You will now need to load the `~/init/Solarized Dark.itermcolors` preset into your iTerm 2 preferences, as well as select the newly installed 'Source Sans Pro for Powerline' fonts.
 
+Feel free to make your default new iTerm window size bigger as well, we typically use 125x35.
+
 ### System Preferences
 
 Couple of keyboard settings we use to speed up development and navigating with the keyboard.

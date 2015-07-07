@@ -97,7 +97,7 @@ There are a few npm modules that we will be using globally (nodemon, yo, bower):
 
 To ensure Powerline displays properly within iTerm you would need to install the 'Source Sans Pro for Powerline' font:
 
-    git clone git@github.com:powerline/fonts.git
+    git clone https://github.com/powerline/fonts.git
     ./fonts/install.sh
     rm -rf fonts
 

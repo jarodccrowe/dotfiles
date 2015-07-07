@@ -101,6 +101,18 @@ To ensure Powerline displays properly within iTerm you would need to install the
     ./fonts/install.sh
     rm -rf fonts
 
+### iTerms 2 Preferences
+
+You will now need to load the `~/init/Solarized Dark.itermcolors` preset into your iTerm 2 preferences, as well as select the newly installed 'Source Sans Pro for Powerline' fonts.
+
+### System Preferences
+
+Couple of keyboard settings we use to speed up development and navigating with the keyboard.
+
+In Keyboard system preferences change 'Key Repeat' to 'Fast', and 'Delay Until Repeat' to 'Short'.
+
+We also map our 'Caps Lock' key to 'ctrl' as we find there is no need for caps lock. Do this under Keyboard Preferences in 'Modifier Keys...'.
+
 ## Feedback
 
 Suggestions/improvements

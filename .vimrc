@@ -121,6 +121,8 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 " Make Space the leader key
 let mapleader="\<Space>"
 
+let g:nerdtree_tabs_open_on_console_startup=1
+
 let g:syntastic_html_checkers=[]
 let g:syntastic_javascript_checkers = ['eslint']
 
@@ -133,7 +135,7 @@ let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_smartsign_us = 1
 
 " Quick toggle for NERD Tree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>n :NERDTreeTabsToggle<CR>
 " Unhighlights search
 map <silent> <leader><cr> :noh<cr>
 " Save file
@@ -193,6 +195,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'FuzzyFinder'
 Plugin 'groenewege/vim-less'
 Plugin 'itchyny/calendar.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'juvenn/mustache.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
